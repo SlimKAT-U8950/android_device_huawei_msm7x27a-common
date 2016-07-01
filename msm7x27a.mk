@@ -116,18 +116,16 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.qualcomm.bluetooth.ftp=true
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.cwm.enable_key_repeat=true
-
-PRODUCT_PROPERTY_OVERRIDES += \
     debug.composition.type=dyn \
     debug.hwc.dynThreshold=1.9 \
     ro.bq.gpu_to_cpu_unsupported=1 \
-    ro.max.fling_velocity=4000 \
+    ro.min.fling_velocity=8000 \
+    ro.max.fling_velocity=12000 \
     ro.opengles.version=131072 \
     ro.sf.lcd_density=240
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    dalvik.vm.heapgrowthlimit=48m \
+    dalvik.vm.heapgrowthlimit=52m \
     dalvik.vm.heapsize=128m \
     ro.config.low_ram=true
 
@@ -145,7 +143,17 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.usb.config=mtp,adb \
-    ro.vold.umsdirtyratio=50
+    ro.vold.umsdirtyratio=50 \
+    ro.lge.proximity.delay=25 \
+    mot.proximity.delay=25 \
+    ro.kernel.android.checkjni=0 \
+    persist.sys.purgeable_assets=1 \
+    dalvik.vm.verify-bytecode=false \
+    dalvik.vm.dexopt-flags=v=n,o=v \
+    persist.android.strictmode=0 \
+    persist.sys.scrollingcache=3 \
+    persist.sys.composition.type=dyn \
+    dalvik.vm.jit.codecachesize=0
 
 PRODUCT_PROPERTY_OVERRIDES += \
     wifi.interface=eth0 \
