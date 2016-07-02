@@ -180,9 +180,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
    
 # Voip
 PRODUCT_PROPERTY_OVERRIDES += \
-   lpa.decode=false
-   tunnel.decode=false
-   lpa.use-stagefright=false
+   lpa.decode=false \
+   tunnel.decode=false \
+   lpa.use-stagefright=false \
    lpa.releaselock=false
 
 $(call inherit-product, vendor/huawei/msm7x27a-common/msm7x27a-common-vendor.mk)
