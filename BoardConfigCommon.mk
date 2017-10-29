@@ -91,9 +91,6 @@ TARGET_QCOM_DISPLAY_VARIANT := legacy
 USE_OPENGL_RENDERER := true
 HWUI_COMPILE_FOR_PERF := true
 
-# Hardware
-BOARD_HARDWARE_CLASS := device/huawei/msm7x27a-common/cmhw
-
 # Kernel
 BOARD_KERNEL_BASE := 0x00200000
 BOARD_KERNEL_CMDLINE := androidboot.hardware=huawei androidboot.selinux=permissive
