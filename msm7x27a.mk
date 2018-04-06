@@ -50,6 +50,10 @@ PRODUCT_PACKAGES += \
     libmm-omxcore \
     libOmxCore \
     libstagefrighthw
+    
+# WebKit
+PRODUCT_PACKAGES += \
+    libwebcore
 
 PRODUCT_PACKAGES += \
     gps.msm7x27a
@@ -161,7 +165,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Webkit (classic webview provider)
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.webview.provider=chromium
+    persist.webview.provider=classic
 
 PRODUCT_PROPERTY_OVERRIDES += \
     audio.gapless.playback.disable=true \
