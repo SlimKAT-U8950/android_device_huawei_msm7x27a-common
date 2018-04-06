@@ -65,6 +65,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libwebcore
 
+# Power HAL
+PRODUCT_PACKAGES += \
+    power.msm7x27a
+
 # Files
 PRODUCT_COPY_FILES += \
     device/huawei/msm7x27a-common/rootdir/init.huawei.rc:root/init.huawei.rc \
