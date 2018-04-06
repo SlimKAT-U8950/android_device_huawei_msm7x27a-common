@@ -61,10 +61,6 @@ PRODUCT_PACKAGES += \
     make_ext4fs \
     setup_fs
 
-# WebKit
-PRODUCT_PACKAGES += \
-    libwebcore
-
 # Power HAL
 PRODUCT_PACKAGES += \
     power.msm7x27a
@@ -165,7 +161,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Webkit (classic webview provider)
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.webview.provider=classic
+    persist.webview.provider=chromium
 
 PRODUCT_PROPERTY_OVERRIDES += \
     audio.gapless.playback.disable=true \
