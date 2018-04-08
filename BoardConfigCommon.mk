@@ -93,7 +93,7 @@ HWUI_COMPILE_FOR_PERF := true
 
 # Kernel
 BOARD_KERNEL_BASE := 0x00200000
-BOARD_KERNEL_CMDLINE := androidboot.hardware=huawei androidboot.selinux=permissive
+BOARD_KERNEL_CMDLINE := androidboot.hardware=huawei androidboot.selinux=permissive pmemlog=3 reboot=2
 BOARD_PAGE_SIZE := 2048
 TARGET_KERNEL_SOURCE := kernel/huawei/huawei-kernel-3.4
 TARGET_KERNEL_CUSTOM_TOOLCHAIN := linaro-4.7-13.04/bin/arm-linux-gnueabihf-
