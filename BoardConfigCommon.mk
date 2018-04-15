@@ -91,6 +91,9 @@ TARGET_QCOM_DISPLAY_VARIANT := legacy
 USE_OPENGL_RENDERER := true
 HWUI_COMPILE_FOR_PERF := true
 
+# Hardware
+BOARD_HARDWARE_CLASS := device/huawei/msm7x27a-common/cmhw
+
 # Kernel
 BOARD_KERNEL_BASE := 0x00200000
 BOARD_KERNEL_CMDLINE := androidboot.hardware=huawei androidboot.selinux=permissive pmemlog=3 reboot=2
@@ -103,10 +106,8 @@ BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01800000
 TARGET_PROVIDES_LIBLIGHTS := true
 
 # Media
-TARGET_QCOM_LEGACY_OMX := true
-TARGET_QCOM_MEDIA_VARIANT := legacy
 TARGET_ENABLE_QC_AV_ENHANCEMENTS := true
-COMMON_GLOBAL_CFLAGS += -DQCOM_NO_SECURE_PLAYBACK
+TARGET_QCOM_MEDIA_VARIANT := legacy
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 0x800000
